@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-space-grotesk: var(--space-grotesk-font);
+  --font-jakarta: var(--jakarta-font);
+}
+
