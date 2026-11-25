@@ -25,7 +25,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${barlowCondensed.variable} ${outfit.variable}`}>
-      <body>{children}</body>
+      <body>
+        <noscript>
+          <style>{`#site-loader { display: none; }`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
