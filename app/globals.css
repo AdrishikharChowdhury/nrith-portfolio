@@ -19,6 +19,22 @@ body {
   outline-offset: 4px;
 }
 
+.site-loader {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #1c1a25;
+}
+
+.site-loader__mark {
+  display: block;
+  width: clamp(4rem, 8vw, 7.5rem);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
 .site-header {
   position: absolute;
   z-index: 2;
@@ -146,6 +162,19 @@ body {
 }
 
 .hero__art img {
+  object-fit: contain;
+}
+
+.hero__shard {
+  position: absolute;
+  inset: 0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero__shard img {
   object-fit: contain;
 }
 

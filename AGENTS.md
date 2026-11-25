@@ -183,16 +183,18 @@ Keep the progress and findings sections short and current.
 
 ## Progress
 
-**Done:** Next.js App Router scaffold is present and project conventions are Next.js-specific.
+**Done:** Navbar and hero layout; responsive poster shards, loading gate, and GSAP intro.
 
 **In progress:** none.
 
-**Next:** establish the asset map and build the measuring tool.
+**Next:** establish the remaining section asset map and build the measuring tool.
 
-**Open differences:** none yet.
+**Open differences:** Intro timing/easing is an estimate; local playback has not been measured against the recording.
 
 ## Findings
 
 - The app uses Next.js 16 App Router, React 19, TypeScript, and Tailwind CSS 4.
 - Shared page copy will live in `src/content.ts`.
 - Root metadata and fonts are configured in `app/layout.tsx`.
+- Hero poster and responsive shard layers are in `public/assets/site/hero/`; the centered hero mark is `public/assets/brand/logo-poster.png`.
+- The hero switches poster/shard sources at 767px; `Hero` remains server-rendered and `HeroIntro` owns the client-side load gate and GSAP timeline.

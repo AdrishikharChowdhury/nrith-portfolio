@@ -1,4 +1,5 @@
 import { Hero } from "@/src/components/Hero";
+import { HeroIntro } from "@/src/components/HeroIntro";
 import { SiteHeader } from "@/src/components/SiteHeader";
 
 export default function Page() {
@@ -7,6 +8,7 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
+        <HeroIntro />
       </main>
     </>
   );

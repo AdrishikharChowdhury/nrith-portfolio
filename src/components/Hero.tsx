@@ -18,6 +18,25 @@ export function Hero() {
             sizes="(max-width: 767px) 88vw, 69vw"
           />
         </picture>
+        {Array.from({ length: 10 }, (_, index) => {
+          const shard = `shard-${String(index + 1).padStart(2, "0")}`;
+
+          return (
+            <picture className="hero__shard" key={shard}>
+              <source
+                media="(max-width: 767px)"
+                srcSet={`/assets/site/hero/mobile/${shard}.avif`}
+              />
+              <Image
+                src={`/assets/site/hero/desktop/${shard}.avif`}
+                alt=""
+                fill
+                sizes="(max-width: 767px) 88vw, 69vw"
+                loading="eager"
+              />
+            </picture>
+          );
+        })}
         <div className="hero__logo">
           <Image
             src="/assets/brand/logo-poster.png"
