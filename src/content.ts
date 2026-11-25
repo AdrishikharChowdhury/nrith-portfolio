@@ -17,7 +17,7 @@ export const CONTENT = {
       "Portfolio of Nrith Jana. Fan-made GTA VI-style portfolio. Not affiliated with Rockstar Games.",
   },
   navbar: {
-    monogram: "GTD",
+    monogram: "NJ", //dont change this shit
     hire: "Hire Me",
   },
   hero: {

@@ -1,10 +1,13 @@
-import { CONTENT } from "@/src/content";
-import { AnimatedWordmark } from "@/src/components/AnimatedWordmark";
+import { Hero } from "@/src/components/Hero";
+import { SiteHeader } from "@/src/components/SiteHeader";
 
 export default function Page() {
   return (
-    <main className="wordmark-page">
-      <AnimatedWordmark label={CONTENT.hero.wordmark} />
-    </main>
+    <>
+      <SiteHeader />
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
