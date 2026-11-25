@@ -1,12 +1,19 @@
-import React from 'react'
+import { CONTENT } from "@/src/content";
 
-const page = () => {
+export default function Page() {
   return (
-    <section className=''>
-      <p className='text-4xl font-space-grotesk' >Hi, I am Nrith Jana. This is my Portfolio</p>
-      <p className='font-jakarta text-xl' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quas harum molestiae, fugit, laborum sequi doloribus saepe delectus nesciunt commodi consequuntur rem ab perferendis! Non quam commodi iure nihil nam!</p>
-    </section>
-  )
+    <main className="mx-auto min-h-screen max-w-5xl px-6 py-16">
+      <section>
+        {CONTENT.hero.lines.map((line) => (
+          <h1 key={line} className="font-space-grotesk text-5xl font-bold">
+            {line}
+          </h1>
+        ))}
+        <p className="mt-6 max-w-2xl font-jakarta text-lg">
+          {CONTENT.miami.bio}
+        </p>
+        <p className="mt-8 text-sm">{CONTENT.hero.disclaimer}</p>
+      </section>
+    </main>
+  );
 }
-
-export default page
