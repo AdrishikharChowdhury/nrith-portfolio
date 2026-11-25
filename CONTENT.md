@@ -7,9 +7,9 @@ Keep copy synchronized with card artwork. Edit this file before swapping painted
 
 ## Page metadata
 
-**Title:** "Grand Theft Developer · Jarvis, Full-Stack Developer"
+**Title:** "Nrith Jana | Developer"
 
-**Description:** "Portfolio of Jarvis, a full-stack developer in Miami. Fan-made GTA VI-style portfolio. Not affiliated with Rockstar Games."
+**Description:** "Portfolio of Nrith Jana. Fan-made GTA VI-style portfolio. Not affiliated with Rockstar Games."
 
 ## App Router content contract
 
@@ -29,6 +29,7 @@ Keep copy synchronized with card artwork. Edit this file before swapping painted
 
 ## Hero
 
+- Wordmark: "Nrith Jana"
 - Tagline line 1: "Full-stack developer"
 - Tagline line 2: "Booking spring 2027"
 - Button: "Hire Me"
@@ -76,7 +77,7 @@ Keep copy synchronized with card artwork. Edit this file before swapping painted
 ## Miami, USA.
 
 - Title: "Miami, USA."
-- Bio: "I'm Jarvis, a full-stack developer who has spent eight years building products for startups, agencies and teams that need to ship fast without breaking things. I work across the whole stack, from the interface people see to the API and database behind it, and I care about code the next developer will thank me for."
+- Bio: "I'm Nrith Jana, a full-stack developer who has spent eight years building products for startups, agencies and teams that need to ship fast without breaking things. I work across the whole stack, from the interface people see to the API and database behind it, and I care about code the next developer will thank me for."
 
 ## Four wide cards
 

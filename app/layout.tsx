@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Space_Grotesk,Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { CONTENT } from "@/src/content";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--space-grotesk-font",
-  subsets: ["latin"],
+const barlowCondensed = localFont({
+  src: "../public/assets/fonts/barlow-condensed-900.woff2",
+  variable: "--barlow-condensed-font",
+  weight: "900",
+  display: "swap",
 });
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--jakarta-font",
-  subsets: ["latin"],
+const outfit = localFont({
+  src: "../public/assets/fonts/outfit-variable.woff2",
+  variable: "--outfit-font",
+  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -20,11 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${plusJakartaSans.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${barlowCondensed.variable} ${outfit.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

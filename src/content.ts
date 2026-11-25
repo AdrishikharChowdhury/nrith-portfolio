@@ -12,15 +12,16 @@ export const LINKS = {
 
 export const CONTENT = {
   page: {
-    title: "Grand Theft Developer · Jarvis, Full-Stack Developer",
+    title: "Nrith Jana | Developer",
     description:
-      "Portfolio of Jarvis, a full-stack developer in Miami. Fan-made GTA VI-style portfolio. Not affiliated with Rockstar Games.",
+      "Portfolio of Nrith Jana. Fan-made GTA VI-style portfolio. Not affiliated with Rockstar Games.",
   },
   navbar: {
     monogram: "GTD",
     hire: "Hire Me",
   },
   hero: {
+    wordmark: "Nrith Jana",
     lines: ["Full-stack developer", "Booking spring 2027"],
     button: "Hire Me",
     tech: ["React", "Node.js", "PostgreSQL"],
@@ -58,7 +59,7 @@ export const CONTENT = {
   ],
   miami: {
     title: "Miami, USA.",
-    bio: "I'm Jarvis, a full-stack developer who has spent eight years building products for startups, agencies and teams that need to ship fast without breaking things. I work across the whole stack, from the interface people see to the API and database behind it, and I care about code the next developer will thank me for.",
+    bio: "I'm Nrith Jana, a full-stack developer who has spent eight years building products for startups, agencies and teams that need to ship fast without breaking things. I work across the whole stack, from the interface people see to the API and database behind it, and I care about code the next developer will thank me for.",
   },
   highlights: [
     {

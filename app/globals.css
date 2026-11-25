@@ -1,7 +1,42 @@
-@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
 
-@theme inline {
-  --font-space-grotesk: var(--space-grotesk-font);
-  --font-jakarta: var(--jakarta-font);
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #090a0d;
+  color: #f5f3ed;
+  font-family: var(--outfit-font), sans-serif;
+}
+
+.wordmark-page {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.wordmark {
+  margin: 0;
+  width: min(100%, 48rem);
+}
+
+.wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 360px) {
+  .wordmark {
+    width: 100%;
+  }
 }
 
